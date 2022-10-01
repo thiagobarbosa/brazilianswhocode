@@ -1,21 +1,15 @@
-# Women Who Design
+# Brazilians Who Code
 
-Women Who Design is a [Next.js](https://gatsbyjs.org)-powered Twitter directory of accomplished women in the design industry. It aims to help people find notable and relevant voices to follow on Twitter by parsing Twitter bios for popular keywords.
-
-Here are some things Women Who Design can help you with:
-
-- **If you're a Twitter user, use this project to diversify the voices in your feed.** Run [proporti.onl](https://www.proporti.onl/) to check the ratio of the people you follow on Twitter. If you're following more men than women, follow women who work in your areas of interest. Be aware that a feed of white women is not diverse.
-- **If you're a hiring manager, use this project to find candidates.** Examine the ratio of senior men to senior women in your organization. Are women of color equally represented? Consider hiring women into promotions above their current role.
-- **If you're organizing a conference, use this project to find speakers.** Ensure that the women's speaking slots are as prominent as the men's. Are women of color equally represented? Consider reaching out to women who have never given a talk before.
-- **If you have a podcast, use this project to find new guests.** Be mindful of interruptions and ensure that your women guests get equal speaking time. Are women of color equally represented? Consider inviting women who don't already have an audience.
+Brazilians Who Code is a [Next.js](https://nextjs.org)-powered Twitter directory of accomplished Brazilians in the design industry. It aims to help people find notable and relevant voices to follow on Twitter by parsing Twitter bios for popular keywords.
+This entire website is built based on the source code of [Women Who Design](https://github.com/julesforrest/womenwhodesign), and we highly appreciate they opening their code :).
 
 ## Forking this project
 
-Women Who Design is happy to support new directories highlighting underrepresented or marginalized groups by providing its source code. These instructions will get you a copy of the project up and running on your local machine to get started.
+Brazilians Who Code is happy to support new directories highlighting underrepresented or marginalized groups by providing its source code. These instructions will get you a copy of the project up and running on your local machine to get started.
 
 ### Prerequisites
 
-This project requires API keys from [Twitter](https://twitter.com) to populate the profile data and [Seeker](https://seeker.company) to populate the job posts.
+This project requires API keys from [Twitter](https://twitter.com) to populate the profile data.
 
 #### Seeker
 
@@ -59,7 +53,7 @@ Copy the bearer token and place the value in the `.env` file.
 
 ### Generating directory profiles
 
-The directory's profiles are generated from the list of users that the Women Who Design Twitter account follows.
+The directory's profiles are generated from the list of users that the Brazilians Who Code Twitter account follows.
 
 To provide your own user list, replace the value of the variable `TWITTER_ACCOUNT_ID` in the `pages/index.jsx` file with the Twitter ID of your chosen Twitter account. To get the Twitter ID of your account, provide your handle to a service like [Tweeter ID](https://tweeterid.com/).
 
@@ -90,7 +84,7 @@ yarn
 Making sure you're in the correct project folder, start the local development server.
 
 ```
-yarn start
+yarn run dev
 ```
 
 In your browser, open `localhost:8000`.
