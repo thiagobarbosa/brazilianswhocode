@@ -14,7 +14,7 @@ const Nav = (props) => {
     >
       <Link href="/">
         <a>
-          {/* <Logo className={styles.logo} /> */}
+          <Logo/>
         </a>
       </Link>
       <nav className={styles.links}>
