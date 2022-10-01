@@ -21,7 +21,7 @@ export default function Profile({ profile, lazyRoot }) {
     <div
       className={styles.profile}
       style={{
-        "--profile-theme-color": hex === "#FFFFFF" ? "#1da1f2" : hex,
+        "--profile-theme-color": hex,
       }}
     >
       <div style={{ backgroundColor: "lightgray" }}>

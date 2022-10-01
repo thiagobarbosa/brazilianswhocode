@@ -77,7 +77,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
     id: p.id_str,
     name: p.name,
     image: p.profile_image_url_https.replace("_normal", "_400x400"),
-    hex: `#${p.profile_link_color}`,
+    hex: "#1da1f2",
     description: addDescriptionLinks(p),
     tags: getTags(p),
     location: p.location,
