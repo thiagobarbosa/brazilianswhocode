@@ -1,0 +1,197 @@
+@import "../../styles/variables.scss";
+
+.container {
+  overflow-x: hidden;
+  font-family: $graphik;
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.main {
+  position: static;
+  overflow-y: scroll;
+  padding: var(--page-shell-padding);
+  transition: all 0.5s ease;
+  width: 100%;
+  @media (min-width: $desktop) {
+    height: 100vh;
+  }
+}
+
+.sidebar {
+  overflow-y: scroll;
+  background-color: var(--gray);
+  @media (min-width: $desktop) {
+    min-width: var(--sidebar);
+    width: var(--sidebar);
+    max-width: var(--sidebar);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.filterContainer {
+  padding: 0 var(--page-shell-padding) var(--page-shell-padding);
+  color: var(--text);
+  background-color: var(--background);
+  display: none;
+  @media (min-width: $desktop) {
+    display: block;
+    --background: var(--gray);
+    --text: white;
+    position: static;
+    transform: translateX(0);
+  }
+}
+
+.profiles {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: calc(var(--page-shell-padding) * 2);
+
+  @media (min-width: $non-mobile) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem 2rem;
+    @supports not (display: grid) {
+      display: block;
+    }
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2.5rem 2rem;
+    @supports not (display: grid) {
+      display: block;
+    }
+  }
+}
+
+.filterCategoryTitle {
+  font-weight: 500;
+  padding: 24px 0 16px;
+}
+
+.paginationContainer {
+  margin-top: var(--page-shell-padding);
+  padding: var(--page-shell-padding) calc(var(--page-shell-padding) / 2)
+    calc(var(--page-shell-padding) * 5.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: $desktop) {
+    padding: calc(var(--page-shell-padding) / 2);
+  }
+}
+
+.pageNumberButton {
+  font-size: 1rem;
+  background-color: var(--background);
+  border: none;
+  padding: calc(var(--page-shell-padding) / 4);
+  margin: calc(var(--page-shell-padding) / 8);
+  font-family: $pitch;
+  color: var(--text);
+  line-height: 1;
+  border-radius: 2px;
+}
+
+.pageNumberButton:disabled {
+  font-weight: 500;
+  --text: white;
+  --background: var(--gray);
+}
+
+.pageNumberButton:not(:disabled) {
+  cursor: pointer;
+}
+
+.pageNumberButton:hover:not(:disabled) {
+  --background: var(--border-gray);
+}
+.pageNumberButton:focus:not(:disabled) {
+  box-shadow: 0 0 0 1px var(--text);
+  outline: none;
+}
+
+.arrow {
+  font-family: sans-serif;
+}
+
+.paginationArrow {
+  composes: arrow pageNumberButton;
+}
+.paginationArrow:disabled {
+  display: none;
+}
+
+.filterButtonContainer {
+  position: fixed;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.dialogHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 8px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-gray);
+  h2 {
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.closeButton {
+  height: 48px;
+  width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.dialogBody {
+  padding: 0 16px 16px;
+  overflow-y: scroll;
+}
+
+.closeButton:focus {
+  outline: none;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 3px var(--background), inset 0 0 0 4px var(--text);
+  text-decoration: none;
+}
+
+.dialogFooter {
+  border-top: 1px solid var(--border-gray);
+  padding: 16px;
+  margin-top: auto;
+}
+
+.filterClear {
+  margin-left: auto;
+  font-size: 13px;
+  font-family: "pitch sans web", monospace;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0 6px;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: none;
+    border-radius: 1px;
+    box-shadow: var(--background) 0px 0px 0px 2px, var(--text) 0px 0px 0px 3px;
+    text-decoration: none;
+  }
+}

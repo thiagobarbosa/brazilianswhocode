@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Art directors",
+    "id": "art",
+    "type": "expertise"
+  },
+  {
+    "title": "Authors",
+    "id": "author",
+    "type": "position"
+  },
+  {
+    "title": "CEOs",
+    "id": "ceo",
+    "type": "position"
+  },
+  {
+    "title": "Content strategists",
+    "id": "content",
+    "type": "expertise"
+  },
+  {
+    "title": "Creative directors",
+    "id": "creative",
+    "type": "expertise"
+  },
+  {
+    "title": "Design system-ers",
+    "id": "systems",
+    "type": "expertise"
+  },
+  {
+    "title": "Directors",
+    "id": "director",
+    "type": "position"
+  },
+  {
+    "title": "Developers",
+    "id": "developer",
+    "type": "expertise"
+  },
+  {
+    "title": "Engineers",
+    "id": "engineer",
+    "type": "expertise"
+  },
+  {
+    "title": "Founders",
+    "id": "founder",
+    "type": "position"
+  },
+  {
+    "title": "Freelancers",
+    "id": "freelance",
+    "type": "position"
+  },
+  {
+    "title": "Graphic designers",
+    "id": "graphic",
+    "type": "expertise"
+  },
+  {
+    "title": "Heads of",
+    "id": "head",
+    "type": "position"
+  },
+  {
+    "title": "Illustrators",
+    "id": "illustrator",
+    "type": "expertise"
+  },
+  {
+    "title": "Leads",
+    "id": "lead",
+    "type": "position"
+  },
+  {
+    "title": "Letterers",
+    "id": "letter",
+    "type": "expertise"
+  },
+  {
+    "title": "Managers",
+    "id": "manager",
+    "type": "position"
+  },
+  {
+    "title": "Product designers",
+    "id": "product",
+    "type": "expertise"
+  },
+  {
+    "title": "Researchers",
+    "id": "research",
+    "type": "expertise"
+  },
+  {
+    "title": "Speakers",
+    "id": "speaker",
+    "type": "position"
+  },
+  {
+    "title": "Type designers",
+    "id": "typeface",
+    "type": "expertise"
+  },
+  {
+    "title": "UX designers",
+    "id": "ux",
+    "type": "expertise"
+  },
+  {
+    "title": "VPs",
+    "id": "vp",
+    "type": "position"
+  },
+  {
+    "title": "Web designers",
+    "id": "web",
+    "type": "expertise"
+  },
+  {
+    "title": "Writers",
+    "id": "writer",
+    "type": "expertise"
+  },
+  {
+    "title": "New York",
+    "id": "nyc",
+    "type": "location"
+  },
+  {
+    "title": "Bay Area",
+    "id": "ba",
+    "type": "location"
+  },
+  {
+    "title": "Los Angeles",
+    "id": "la",
+    "type": "location"
+  },
+  {
+    "title": "Seattle",
+    "id": "seattle",
+    "type": "location"
+  },
+  {
+    "title": "London",
+    "id": "london",
+    "type": "location"
+  },
+  {
+    "title": "Toronto",
+    "id": "toronto",
+    "type": "location"
+  },
+  {
+    "title": "Portland",
+    "id": "portland",
+    "type": "location"
+  },
+  {
+    "title": "Austin",
+    "id": "austin",
+    "type": "location"
+  },
+  {
+    "title": "Vancouver",
+    "id": "vancouver",
+    "type": "location"
+  }
+]

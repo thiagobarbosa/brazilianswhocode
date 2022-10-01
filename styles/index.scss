@@ -1,0 +1,229 @@
+@import "variables";
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray: rgba(30, 30, 30, 1);
+  --light-gray: rgba(130, 130, 130, 1);
+  --border-gray: rgba(225, 225, 225, 1);
+  --input-gray: rgba(200, 200, 200, 1);
+  --background-gray: rgba(242, 242, 242, 1);
+  --background: white;
+  --text: var(--gray);
+  --page-shell-padding: 24px;
+  --sidebar: 310px;
+  --sidebar-height: 208px;
+  --element-height: 52px;
+
+  @media (min-width: $desktop) {
+    --page-shell-padding: 32px;
+    --element-height: 44px;
+  }
+  color: var(--gray);
+  background-color: var(--background);
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.job-description > h1,
+.job-description > h2,
+.job-description > h3,
+.job-description > h4 {
+  font-size: inherit;
+  font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.job-description > p {
+  padding-bottom: 16px;
+}
+
+.job-description > p:last-child {
+  padding-bottom: 0;
+}
+
+.job-description > ol,
+.job-description > ul {
+  list-style-type: initial;
+  margin: 0 0 0 24px;
+  padding-bottom: 16px;
+}
+
+.job-description > ol {
+  list-style-type: decimal;
+}
+
+.job-description > ol > li,
+.job-description > ul > li {
+  padding: 4px 8px;
+}
+
+a {
+  color: var(--gray);
+}
+
+.job-description {
+  margin-bottom: 30px;
+}
+
+.job-description b,
+.job-description strong,
+.job-description em {
+  font-weight: 500;
+}
+
+.job-description hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+
+.icon-group {
+  display: inline-grid;
+  grid-gap: 8px;
+  align-items: center;
+  grid-auto-flow: column;
+}
+
+[data-reach-dialog-content] {
+  height: 100%;
+  width: 100% !important;
+  max-height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  font-family: $graphik;
+  font-size: 16px;
+}

@@ -1,0 +1,129 @@
+@import "../../styles/variables.scss";
+
+.profile {
+  display: grid;
+  grid-template-columns: 64px repeat(3, 1fr);
+  grid-gap: 0rem 1rem;
+  overflow-x: hidden;
+  font-family: $graphik;
+  --profile-theme-color: var(--gray);
+  font-size: 16px;
+  content-visibility: auto;
+  contain-intrinsic-size: 500px;
+
+  svg {
+    color: var(--profile-theme-color);
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+    &:focus {
+      color: white;
+      background-color: var(--profile-theme-color);
+      outline: none;
+      border-radius: 1px;
+      box-shadow: var(--profile-theme-color) 0px 0px 0px 1px;
+    }
+  }
+  @media (min-width: $non-mobile) {
+    font-size: 14px;
+    @supports not (display: grid) {
+      width: 50%;
+      padding: 16px;
+      display: inline-block;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    @supports not (display: grid) {
+      width: 25%;
+      display: inline-block;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: start;
+
+  @media (min-width: $desktop) {
+    align-self: initial;
+  }
+}
+
+.grayImage {
+  composes: image;
+  filter: grayscale(100%);
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+  font-weight: 500;
+  grid-column: 2 / 5;
+  grid-row: 1 / 2;
+  align-self: center;
+  font-size: 18px;
+  padding: 16px 0 16px;
+  color: var(--profile-theme-color);
+  @media (min-width: $desktop) {
+    padding: 16px 0 12px;
+    align-self: unset;
+    font-size: 16px;
+  }
+}
+
+.url {
+  text-decoration: none;
+  padding-top: 0;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.location {
+  padding-top: 16px;
+  @media (min-width: $desktop) {
+    padding-top: 0;
+  }
+}
+
+.url,
+.location {
+  grid-column: 1 / 5;
+  display: inline-grid;
+  grid-template-columns: 14px auto 1fr;
+  grid-gap: 8px;
+  overflow: none;
+  a {
+    text-decoration: none;
+  }
+}
+
+.description {
+  margin: 0;
+  grid-column: 1 / 5;
+  padding-bottom: 16px;
+  line-height: 1.45;
+
+  a {
+    text-decoration: none;
+    color: var(--profile-theme-color);
+  }
+}
+
+.linkText {
+  display: inline-grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  align-items: center;
+  line-height: 0;
+}

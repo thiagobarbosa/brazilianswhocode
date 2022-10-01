@@ -1,0 +1,65 @@
+@import "../../styles/variables.scss";
+
+.container {
+  padding: var(--page-shell-padding);
+  font-family: $pitch;
+  color: var(--text);
+  background-color: var(--background);
+  a:focus,
+  button:focus {
+    outline: none;
+    border-radius: 1px;
+    box-shadow: var(--background) 0px 0px 0px 2px, var(--text) 0px 0px 0px 3px;
+    text-decoration: none;
+    svg {
+      box-shadow: var(--background) 0px 0px 0px 5px, var(--text) 0px 0px 0px 6px;
+      outline: none;
+      border-radius: 1px;
+    }
+  }
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  fill: var(--text);
+}
+
+.links {
+  padding-top: 24px;
+}
+
+.link {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text);
+  position: relative;
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: $pitch;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link::after {
+  content: "·";
+  position: absolute;
+  right: -15px;
+}
+
+.link:last-child::after {
+  display: none;
+}
+
+.filterButton {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}

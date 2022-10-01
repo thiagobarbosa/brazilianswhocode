@@ -1,0 +1,59 @@
+@import "../../styles/variables.scss";
+
+.main {
+  --background: var(--gray);
+  --text: white;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: $pitch;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0;
+  border: none;
+  font-weight: 500;
+  user-select: none;
+  padding: 0 32px;
+  position: relative;
+  overflow: visible;
+  background-color: var(--background);
+  color: var(--text) !important;
+  border-radius: 2px;
+
+  &WidthFull {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  &WidthAuto {
+    width: auto;
+  }
+
+  &:focus {
+    box-shadow: inset var(--background) 0px 0px 0px 2px,
+      inset var(--text) 0px 0px 0px 3px !important;
+    outline: none;
+  }
+
+  &[disabled],
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.children {
+  display: inline-grid;
+  align-items: center;
+  grid-gap: 12px;
+  grid-auto-flow: column;
+  line-height: 0;
+  &SizeRegular {
+    height: var(--element-height);
+    font-size: 15px;
+    @media (min-width: $desktop) {
+      align-self: unset;
+    }
+  }
+}
