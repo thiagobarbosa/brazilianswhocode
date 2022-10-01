@@ -85,7 +85,7 @@ const App = () => (
         tech industry. It aims to help people find notable and relevant voices
         to follow on Twitter by parsing Twitter bios for popular keywords.
         This entire website is built based on the source code of 
-        <a href="https://github.com/julesforrest/womenwhodesign"> Women Who Design</a>, 
+        <a href="https://github.com/julesforrest/womenwhodesign" target="_blank"> Women Who Design</a>, 
         and we highly appreciate they opening their code :).
       </p>
 
@@ -94,7 +94,7 @@ const App = () => (
         Brazilians Who Code is happy to support new directories highlighting
         underrepresented or marginalized groups. If you’re looking to start a
         similar effort, feel free to fork the project on{" "}
-        <a href="https://github.com/thiagobarbosa/brazilianswhocode">GitHub</a>.
+        <a href="https://github.com/thiagobarbosa/brazilianswhocode" target="_blank">GitHub</a>.
       </p>
       <h2 className={styles.emphasis}>Similar directories</h2>
       <p>
