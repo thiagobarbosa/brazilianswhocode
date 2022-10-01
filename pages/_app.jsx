@@ -40,6 +40,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
 
+      {/* TODO: add tracking scripts
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=UA-99095616-1"
         strategy="afterInteractive"
@@ -52,7 +53,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
 
           gtag('config', 'UA-99095616-1');
         `}
-      </Script>
+      </Script> */}
     </>
   );
 }
