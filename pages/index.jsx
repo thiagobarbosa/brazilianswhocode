@@ -16,7 +16,7 @@ import FilterIcon from "../icons/filter";
 import Button from "../components/button";
 import "@reach/dialog/styles.css";
 
-const TWITTER_ACCOUNT_ID = "855501234924429312";
+const TWITTER_ACCOUNT_ID = "1576146354669330433";
 
 export async function getStaticProps() {
   const profiles = await getTwitterProfiles(TWITTER_ACCOUNT_ID);
@@ -52,9 +52,9 @@ export default function Home({ profiles, categories }) {
   const profileContainerRef = useRef();
 
   const filterCategoryTypes = [
-    { name: "Expertise", id: "expertise" },
-    { name: "Position", id: "position" },
     { name: "Location", id: "location" },
+    { name: "Expertise", id: "expertise" },
+    { name: "Position", id: "position" }
   ];
 
   function filterItemOnChange(e, section) {
@@ -84,7 +84,7 @@ export default function Home({ profiles, categories }) {
     setIsLoading(false);
   }, [profiles]);
 
-  const numDesignersPerPage = 52;
+  const numDesignersPerPage = 50;
   const numPagesToShowInPagination = 5;
 
   const isNoFilterApplied = Object.entries(selectedFilters).every(

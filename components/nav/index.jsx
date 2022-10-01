@@ -14,18 +14,12 @@ const Nav = (props) => {
     >
       <Link href="/">
         <a>
-          <Logo className={styles.logo} />
+          {/* <Logo className={styles.logo} /> */}
         </a>
       </Link>
       <nav className={styles.links}>
         <Link href="/about">
           <a className={styles.link}>About</a>
-        </Link>
-        <Link href="/nominate">
-          <a className={styles.link}>Nominate</a>
-        </Link>
-        <Link href="/jobs">
-          <a className={styles.link}>Jobs</a>
         </Link>
       </nav>
     </div>

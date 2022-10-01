@@ -4,11 +4,11 @@ import "reset-css";
 import "../styles/global.css";
 import "../styles/index.scss";
 
-export default function WomenWhoDesign({ Component, pageProps }) {
-  const title = "Women Who Design";
+export default function BraziliansWhoCode({ Component, pageProps }) {
+  const title = "Brazilians Who Code";
   const description =
-    "A Twitter directory of accomplished women in the design industry.";
-  const image = "https://womenwho.design/opengraph.png";
+    "A Twitter directory of accomplished Brazilians in the tech industry.";
+  const image = "";
 
   return (
     <>
@@ -18,11 +18,11 @@ export default function WomenWhoDesign({ Component, pageProps }) {
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-        <meta property="og:url" content="https://womenwho.design" />
+        <meta property="og:url" content="https://brazilianswhocode.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={title} />
-        <meta property="twitter:site" content="@womenwhodesign" />
-        <meta property="twitter:creator" content="@julesforrest" />
+        <meta property="twitter:site" content="@BR_whocode" />
+        <meta property="twitter:creator" content="@tsouza_barbosa" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:image" content={image} />
         <link

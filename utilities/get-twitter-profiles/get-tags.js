@@ -32,84 +32,53 @@ function deleteFalseFromObject(o) {
 
 function getProfileLocation({ location }) {
   return {
-    nyc: includes(location, ["nyc", "brooklyn", "new york", "ny", "bronx"]),
-    ba: includes(location, [
-      "sf",
-      "san francisco",
-      "bay area",
-      "berkeley",
-      "palo alto",
-      "oakland",
-    ]),
-    la: includes(location, ["la", "los angeles", "santa monica"]),
-    london: includes(location, ["london"]),
-    portland: includes(location, ["portland"]),
-    toronto: includes(location, ["toronto"]),
-    vancouver: includes(location, ["vancouver"]),
-    seattle: includes(location, ["seattle"]),
-    austin: includes(location, ["austin"]),
-  };
-}
-
-function getProfilePosition({ description }) {
-  return {
-    author: includes(description, ["author"]),
-    ceo: includes(description, ["ceo"]),
-    director:
-      includes(description, ["director"]) &&
-      !includes(description, ["art director"]) &&
-      !includes(description, ["art direction"]) &&
-      !includes(description, ["creative director"]),
-    founder: includes(description, ["founder"]),
-    freelance: includes(description, ["freelance", "freelancer"]),
-    head: includes(description, ["head of"]),
-    lead: includes(description, ["lead"]),
-    manager: includes(description, ["manager"]),
-    speaker: includes(description, ["speaker"]),
-    vp: includes(description, ["vp"]),
+    sp: includes(location, ["sao paulo", "sp"]),
+    rj: includes(location, ["rio de janeiro", "rio", "rj"]),
+    rs: includes(location, ["rio grande do sul", "porto alegre", "poa", "rs"]),
+    rn: includes(location, ["rio grande do norte", "natal", "rn"]),
+    df: includes(location, ["distrito federal", "brasilia", "brasilia/df", "df"]),
+    am: includes(location, ["amazonas", "manaus", "am"]),
+    se: includes(location, ["sergipe", "aracaju", "se"]),
+    ba: includes(location, ["bahia", "porto seguro", "salvador", "ba"]),
+    pe: includes(location, ["pernambuco", "recife", "pe"]),
+    pa: includes(location, ["paraná", "maringá", "pa"]),
+    mg: includes(location, ["minas gerais", "belo horizonte", "mg"]),
+    sc: includes(location, ["Santa Catarina", "florianopolis", "floripa", "sc"]),
+    
   };
 }
 
 function getProfileExpertise({ description }) {
   return {
-    art: includes(description, ["art director", "art direction"]),
-    content: includes(description, ["content strategy", "content strategist"]),
-    creative: includes(description, ["creative director"]),
-    systems: includes(description, [
-      "design system",
-      "design systems",
-      "systems designer",
-      "systems design",
+    communitymanager: includes(description, ["community"]),
+    dba: includes(description, ["dba", "database", "mysql", "sql", "nosql"]),
+    backend: includes(description, ["backend", "back-end", "java", "python", "go"]),
+    frontend: includes(description, [
+      "javascript",
+      "frontend",
+      "front-end",
+      "react",
+      "vue-js",
+      "vue",
     ]),
-    developer:
-      includes(description, ["developer"]) &&
+    mobile:
+      includes(description, ["mobile", "ios", "android", "flutter"]) &&
       !includes(description, ["creative developer"]),
-    engineer: includes(description, ["engineer", "engineering"]),
-    graphic: includes(description, [
-      "graphic design",
-      "graphic designer",
-      "graphic designing",
-    ]),
-    illustrator: includes(description, [
-      "illustrator",
-      "illustration",
-      "illustrating",
-      "illustrations",
-    ]),
-    letter: includes(description, ["letterer", "lettering"]),
-    product: includes(description, ["product design", "product designer"]),
-    research: includes(description, ["research", "researcher"]),
-    typeface: includes(description, [
-      "type design",
-      "typeface design",
-      "type designer",
-      "typeface designer",
-    ]),
-    ux: includes(description, ["user experience", "ux"]),
-    web: includes(description, ["web design", "web designer"]),
-    writer: includes(description, ["writer"]),
+    management: includes(description, ["management", "leadership", "head", "manager", "lead"]),
+    datascience: includes(description, ["data", "mathematician", "python"])
   };
 }
+
+function getProfilePosition({ description }) {
+  return {
+    founder: includes(description, ["founder"]),
+    engineer: includes(description, ["engineer", "developer"]),
+    freelance: includes(description, ["freelance", "freelancer"]),
+    clevel: includes(description, ["CTO", "CIO"]),
+  };
+}
+
+
 
 export default function getTags(profile) {
   return {

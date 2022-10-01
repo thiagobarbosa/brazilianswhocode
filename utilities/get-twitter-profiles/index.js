@@ -11,7 +11,7 @@ const lessThanOneHourAgo = (date) => {
 };
 
 export default async function getTwitterProfiles(twitterAccountId) {
-  let chunkedDesigners;
+  let chunkedDevelopers;
 
   // We don't want to fetch from Twitter too often when developing locally
   // becuase of rate limiting. We store the result of the first API requests
@@ -24,7 +24,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
     lessThanOneHourAgo(fs.statSync(localhostCachePath).mtime)
   ) {
     // Cache hit. Read from the file instead of Twitter's API
-    chunkedDesigners = JSON.parse(fs.readFileSync(localhostCachePath, "utf-8"));
+    chunkedDevelopers = JSON.parse(fs.readFileSync(localhostCachePath, "utf-8"));
   } else {
     const twitterAPIHeaders = {
       Authorization: `Bearer ${process.env.WWD_TWITTER_BEARER_TOKEN}`,
@@ -45,7 +45,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
 
     const followingList = await followingListResponse.json();
 
-    chunkedDesigners = await Promise.all(
+    chunkedDevelopers = await Promise.all(
       chunk(followingList.ids, 100).map(async (chunk) => {
         const users = chunk.join(",");
 
@@ -67,11 +67,11 @@ export default async function getTwitterProfiles(twitterAccountId) {
     );
 
     if (process.env.NODE_ENV === "development") {
-      fs.writeFileSync(localhostCachePath, JSON.stringify(chunkedDesigners));
+      fs.writeFileSync(localhostCachePath, JSON.stringify(chunkedDevelopers));
     }
   }
 
-  const profiles = flatten(chunkedDesigners);
+  const profiles = flatten(chunkedDevelopers);
 
   return profiles.map((p) => ({
     id: p.id_str,
