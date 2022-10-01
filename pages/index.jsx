@@ -38,7 +38,7 @@ export async function getStaticProps() {
 
 export default function Home({ profiles, categories }) {
   const [isLoading, setIsLoading] = useState(true);
-  const [visibleDesigners, setVisibleDesigners] = useState([]);
+  const [visibleDevelopers, setVisibleDevelopers] = useState([]);
   const [selectedFilters, setSelectedFilters] = useState({});
 
   const [isFilterListVisible, setIsFilterListVisible] = useState(false);
@@ -79,12 +79,12 @@ export default function Home({ profiles, categories }) {
   }
 
   useEffect(() => {
-    const shuffledDesigners = shuffle(profiles);
-    setVisibleDesigners(shuffledDesigners);
+    const shuffledDevelopers = shuffle(profiles);
+    setVisibleDevelopers(shuffledDevelopers);
     setIsLoading(false);
   }, [profiles]);
 
-  const numDesignersPerPage = 50;
+  const numDevelopersPerPage = 50;
   const numPagesToShowInPagination = 5;
 
   const isNoFilterApplied = Object.entries(selectedFilters).every(
@@ -94,9 +94,9 @@ export default function Home({ profiles, categories }) {
     }
   );
 
-  const filteredDesigners = isNoFilterApplied
-    ? visibleDesigners
-    : visibleDesigners.filter((designer) => {
+  const filteredDevelopers = isNoFilterApplied
+    ? visibleDevelopers
+    : visibleDevelopers.filter((developer) => {
         // A profile should appear if they have at least one tag within each
         // section.
         return Object.entries(selectedFilters).every((category) => {
@@ -107,15 +107,15 @@ export default function Home({ profiles, categories }) {
           }
 
           return categoryValue.some((filter) => {
-            return designer.tags[categoryName][filter];
+            return developer.tags[categoryName][filter];
           });
         });
       });
 
   const pagination = paginate(
-    filteredDesigners.length,
+    filteredDevelopers.length,
     currentPage,
-    numDesignersPerPage,
+    numDevelopersPerPage,
     numPagesToShowInPagination
   );
 
@@ -189,7 +189,7 @@ export default function Home({ profiles, categories }) {
           ) : (
             <>
               <div className={styles.profiles}>
-                {filteredDesigners.map((profile, i) => {
+                {filteredDevelopers.map((profile, i) => {
                   if (i < pagination.startIndex || i > pagination.endIndex) {
                     return null;
                   }
@@ -204,7 +204,7 @@ export default function Home({ profiles, categories }) {
                 })}
               </div>
 
-              {filteredDesigners.length > 0 ? (
+              {filteredDevelopers.length > 0 ? (
                 <>
                   <div className={styles.paginationContainer}>
                     <button
@@ -297,13 +297,13 @@ export default function Home({ profiles, categories }) {
                   </div>
                 </>
               ) : (
-                <div>There are no designers that match these filters.</div>
+                <div>There are no developers that match these filters.</div>
               )}
             </>
           )}
           <div>
             <DialogOverlay isOpen={showDialog} onDismiss={close}>
-              <DialogContent aria-label="Filter designers">
+              <DialogContent aria-label="Filter developers">
                 <div className={styles.dialogHeader}>
                   <ClickableBox className={styles.closeButton} onClick={close}>
                     <span aria-hidden>
@@ -361,8 +361,8 @@ export default function Home({ profiles, categories }) {
                 </div>
                 <div className={styles.dialogFooter}>
                   <Button type="button" onClick={close}>
-                    View {filteredDesigners.length} designer
-                    {filteredDesigners.length !== 1 ? "s" : ""}
+                    View {filteredDevelopers.length} developer
+                    {filteredDevelopers.length !== 1 ? "s" : ""}
                   </Button>
                 </div>
               </DialogContent>

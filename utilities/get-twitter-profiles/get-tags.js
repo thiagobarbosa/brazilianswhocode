@@ -4,8 +4,8 @@ function includes(description, terms) {
     // include a space or any other non-letter.
     //
     // For example, we don't want "Oakland" to appear as "la" because Oakland
-    // contains "la" within the string. We also want "writer/designer" to
-    // register as both writer and designer.
+    // contains "la" within the string. We also want "writer/developer" to
+    // register as both writer and developer.
     //
     // We add a space around `${description}` so that the regex captures
     // descriptions that start with the term. The regex alone is not able to
