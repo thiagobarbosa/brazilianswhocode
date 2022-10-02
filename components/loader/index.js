@@ -6,8 +6,8 @@ const Loader = () => {
     <div className={styles.container}>
       <div>
         <h1 className={styles.heading}>
-          Women Who Design is a Twitter directory of accomplished women in the
-          design industry
+        Brazilians Who Code is a Twitter directory of accomplished Brazilians in the
+        tech industry
         </h1>
         <div className={styles.spinner} />
       </div>
