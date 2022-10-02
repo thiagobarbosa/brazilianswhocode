@@ -79,8 +79,9 @@ export default function Home({ profiles, categories }) {
   }
 
   useEffect(() => {
-    const shuffledDevelopers = shuffle(profiles);
-    setVisibleDevelopers(shuffledDevelopers);
+    //sorting developers by how active they are on Twitter
+    const sortedDevelopers = profiles.sort((a, b) => (a.statusesCount < b.statusesCount)? 1: -1);
+    setVisibleDevelopers(sortedDevelopers);
     setIsLoading(false);
   }, [profiles]);
 

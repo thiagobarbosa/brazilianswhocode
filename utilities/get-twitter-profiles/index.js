@@ -82,6 +82,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
     tags: getTags(p),
     location: p.location,
     handle: p.screen_name,
+    statusesCount: p.statuses_count,
     ...(p.entities.url?.urls[0].expanded_url
       ? { expandedUrl: p.entities.url.urls[0].expanded_url }
       : {}),
