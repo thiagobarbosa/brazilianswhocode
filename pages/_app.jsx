@@ -9,7 +9,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
   const description =
     "A Twitter directory of accomplished Brazilians in the tech industry.";
     // not a beautiful solution:
-  const image = "https://brazilianswhocode.com/_next/image?url=/images/logo.png&w=640&q=75";
+  const image = "/images/logo.png#";
 
   return (
     <>
