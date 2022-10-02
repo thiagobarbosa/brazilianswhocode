@@ -32,19 +32,33 @@ function deleteFalseFromObject(o) {
 
 function getProfileLocation({ location }) {
   return {
-    sp: includes(location, ["sao paulo", "sp"]),
-    rj: includes(location, ["rio de janeiro", "rio", "rj"]),
-    rs: includes(location, ["rio grande do sul", "porto alegre", "poa", "rs"]),
-    rn: includes(location, ["rio grande do norte", "natal", "rn"]),
-    df: includes(location, ["distrito federal", "brasilia", "brasilia/df", "df"]),
+    ac: includes(location, ["acre", "rio branco", "ac"]),
+    al: includes(location, ["alagoas", "maceio", "maceió", "al"]),
+    ap: includes(location, ["amapa", "amapá", "macapa", "macapá", "ap"]),
     am: includes(location, ["amazonas", "manaus", "am"]),
-    se: includes(location, ["sergipe", "aracaju", "se"]),
     ba: includes(location, ["bahia", "porto seguro", "salvador", "ba"]),
-    pe: includes(location, ["pernambuco", "recife", "pe"]),
-    pa: includes(location, ["paraná", "maringá", "pa"]),
+    ce: includes(location, ["ceara", "ceará", "fortaleza", "ce"]),
+    df: includes(location, ["distrito federal", "brasilia", "brasília", "brasilia/df", "df"]),
+    es: includes(location, ["espirito santo", "espírito santo", "vila velha", "es"]),
+    go: includes(location, ["goiás", "goias", "goiânia", "goiania", "go"]),
+    ma: includes(location, ["maranhão", "maranhao", "são luís", "sao luis", "ma"]),
+    mt: includes(location, ["mato grosso", "cuiabá", "cuiaba", "mt"]),
+    ms: includes(location, ["mato grosso do sul", "campo grande", "ms"]),
     mg: includes(location, ["minas gerais", "belo horizonte", "mg"]),
-    sc: includes(location, ["Santa Catarina", "florianopolis", "floripa", "sc"]),
-    
+    pa: includes(location, ["pará", "para", "belém", "belem", "pa"]),
+    pb: includes(location, ["paraíba", "paraiba", "joão pessoa", "joao pessoa", "pb"]),
+    pr: includes(location, ["paraná", "curitiba", "curitiba", "maringá", "maringa", "pa"]),
+    pe: includes(location, ["pernambuco", "recife", "pe"]),
+    pi: includes(location, ["piauí", "piaui", "teresina", "pi"]),
+    rj: includes(location, ["rio de janeiro", "rio", "rj"]),
+    rn: includes(location, ["rio grande do norte", "natal", "rn"]),
+    rs: includes(location, ["rio grande do sul", "porto alegre", "poa", "rs"]),
+    ro: includes(location, ["rondônia", "rondonia", "porto velho", "ro"]),
+    rr: includes(location, ["roraima", "boa vista", "rr"]),
+    sc: includes(location, ["santa catarina", "florianópolis", "florianopolis", "floripa", "sc"]),
+    sp: includes(location, ["são Paulo", "sao paulo", "sp"]),    
+    se: includes(location, ["sergipe", "aracaju", "se"]),
+    to: includes(location, ["tocantins", "palma", "to"])
   };
 }
 

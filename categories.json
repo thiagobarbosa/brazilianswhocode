@@ -1,17 +1,17 @@
 [
   {
-    "title": "Sao Paulo",
-    "id": "sp",
+    "title": "Acre",
+    "id": "ac",
     "type": "location"
   },
   {
-    "title": "Rio de Janeiro",
-    "id": "rj",
+    "title": "Alagoas",
+    "id": "al",
     "type": "location"
   },
   {
-    "title": "Rio Grande do Sul",
-    "id": "rs",
+    "title": "Amapá",
+    "id": "ap",
     "type": "location"
   },
   {
@@ -20,8 +20,13 @@
     "type": "location"
   },
   {
-    "title": "Sergipe",
-    "id": "se",
+    "title": "Bahia",
+    "id": "ba",
+    "type": "location"
+  },
+  {
+    "title": "Ceará",
+    "id": "ce",
     "type": "location"
   },
   {
@@ -30,23 +35,28 @@
     "type": "location"
   },
   {
-    "title": "Rio Grande do Norte",
-    "id": "rn",
+    "title": "Espírito Santo",
+    "id": "es",
     "type": "location"
   },
   {
-    "title": "Bahia",
-    "id": "ba",
+    "title": "Goiás",
+    "id": "go",
     "type": "location"
   },
   {
-    "title": "Pernambuco",
-    "id": "pe",
+    "title": "Maranhão",
+    "id": "ma",
     "type": "location"
   },
   {
-    "title": "Paraná",
-    "id": "pa",
+    "title": "Mato Grosso",
+    "id": "mt",
+    "type": "location"
+  },
+  {
+    "title": "Mato Grosso do Sul",
+    "id": "ms",
     "type": "location"
   },
   {
@@ -55,11 +65,70 @@
     "type": "location"
   },
   {
+    "title": "Pará",
+    "id": "pa",
+    "type": "location"
+  },
+  {
+    "title": "Paraíba",
+    "id": "pb",
+    "type": "location"
+  },
+  {
+    "title": "Paraná",
+    "id": "pr",
+    "type": "location"
+  },
+  {
+    "title": "Piauí",
+    "id": "pi",
+    "type": "location"
+  },
+  {
+    "title": "Rio de Janeiro",
+    "id": "rj",
+    "type": "location"
+  },
+  {
+    "title": "Rio Grande do Norte",
+    "id": "rn",
+    "type": "location"
+  },
+  {
+    "title": "Rio Grande do Sul",
+    "id": "rs",
+    "type": "location"
+  },
+  {
+    "title": "Rondônia",
+    "id": "ro",
+    "type": "location"
+  },
+  {
+    "title": "Roraima",
+    "id": "rr",
+    "type": "location"
+  },
+  {
     "title": "Santa Catarina",
     "id": "sc",
     "type": "location"
   },
-  
+  {
+    "title": "São Paulo",
+    "id": "sp",
+    "type": "location"
+  },
+  {
+    "title": "Sergipe",
+    "id": "se",
+    "type": "location"
+  },
+  {
+    "title": "Tocantins",
+    "id": "to",
+    "type": "location"
+  },
   {
     "title": "Community Manager",
     "id": "communitymanager",
