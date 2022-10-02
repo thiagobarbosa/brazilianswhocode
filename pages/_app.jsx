@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import Script from "next/script";
+import Script from "next/script";
 import "reset-css";
 import "../styles/global.css";
 import "../styles/index.scss";
@@ -41,20 +41,20 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
 
-      {/* TODO: add tracking scripts
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=UA-99095616-1"
+        src="https://www.googletagmanager.com/gtag/js?id=G-G6YNC8RLFH"
         strategy="afterInteractive"
       />
+     
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
+          function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'UA-99095616-1');
+        
+          gtag('config', 'G-G6YNC8RLFH');
         `}
-      </Script> */}
+      </Script> 
     </>
   );
 }
