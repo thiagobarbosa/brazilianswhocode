@@ -69,8 +69,10 @@ function getProfileExpertise({ description }) {
     backend: includes(description, ["backend", "back-end", "java", "python", "go"]),
     frontend: includes(description, [
       "javascript",
+      "web",
       "frontend",
       "front-end",
+      "nodejs",
       "react",
       "vue-js",
       "vue",
@@ -79,13 +81,15 @@ function getProfileExpertise({ description }) {
       includes(description, ["mobile", "ios", "android", "flutter"]) &&
       !includes(description, ["creative developer"]),
     management: includes(description, ["management", "leadership", "head", "manager", "lead"]),
-    datascience: includes(description, ["data", "mathematician", "python"])
+    datascience: includes(description, ["data", "mathematician", "python", "dados"]),
+    devops: includes(description, ["devops", "docker", "cloud"]),
+    qa: includes(description, ["qa", "teste", "tests"])
   };
 }
 
 function getProfilePosition({ description }) {
   return {
-    founder: includes(description, ["founder"]),
+    founder: includes(description, ["founder", "cofounder", "co-founder", "co-fundadora", "co-fundador"]),
     engineer: includes(description, ["engineer", "developer"]),
     freelance: includes(description, ["freelance", "freelancer"]),
     clevel: includes(description, ["CTO", "CIO"]),

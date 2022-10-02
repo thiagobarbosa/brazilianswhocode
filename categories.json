@@ -164,6 +164,16 @@
     "id": "datascience",
     "type": "expertise"
   },
+  {
+    "title": "DevOps",
+    "id": "devops",
+    "type": "expertise"
+  },
+  {
+    "title": "QA Engineer",
+    "id": "qa",
+    "type": "expertise"
+  },
  
   {
     "title": "Founders",
