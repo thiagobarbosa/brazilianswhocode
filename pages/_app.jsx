@@ -8,7 +8,8 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
   const title = "Brazilians Who Code";
   const description =
     "A Twitter directory of accomplished Brazilians in the tech industry.";
-  // const image = "/image/logo.png";
+    // not a beautiful solution:
+  const image = "https://brazilianswhocode.com/_next/image?url=/images/logo.png&w=640&q=75";
 
   return (
     <>
@@ -17,14 +18,14 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
         <meta property="description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
-        {/* <meta property="og:image" content={image} /> */}
+        <meta property="og:image" content={image} />
         <meta property="og:url" content="https://brazilianswhocode.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={title} />
         <meta property="twitter:site" content="@BR_whocode" />
         <meta property="twitter:creator" content="@tsouza_barbosa" />
         <meta property="twitter:card" content="summary_large_image" />
-        {/* <meta property="twitter:image" content={image} /> */}
+        <meta property="twitter:image" content={image} />
         <link
           rel="icon"
           type="image/png"
