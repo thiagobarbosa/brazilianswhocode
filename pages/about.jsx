@@ -96,7 +96,34 @@ const App = () => (
         similar effort, feel free to fork the project on{" "}
         <a href="https://github.com/thiagobarbosa/brazilianswhocode" target="_blank">GitHub</a>.
       </p>
-      <h2 className={styles.emphasis}>Similar directories</h2>
+
+      <h1 className={styles.h1}>Joining the list</h1>
+      <p>
+        If you want to be included in our list of developers, just follow  {" "}
+        <a
+          href="https://twitter.com/BR_whocode"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @BR_whocode
+        </a>{" "}
+        on Twitter. We'll follow you back and you will be automatically added to the website.
+      </p>
+      <h1 className={styles.h1}>Removing yourself from the list</h1>
+      <p>
+        If you’ve been featured in the website and you’d rather not be, please
+        send a DM to{" "}
+        <a
+          href="https://twitter.com/BR_whocode"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @BR_whocode
+        </a>{" "}
+        on Twitter and you will be removed.
+      </p>
+
+      <h1 className={styles.h1}>Similar directories</h1>
       <p>
         Examining diversity along the axis of gender is one small piece of the
         puzzle. If you’ve found this site to be valuable, please take a look at
@@ -139,32 +166,6 @@ const App = () => (
         })}
       </div>
       
-      <h1 className={styles.h1}>Other notes</h1>
-      <h2 className={styles.emphasis}>Opt in</h2>
-      <p>
-        If you want to be included in our list of developers, please send a DM to {" "}
-        <a
-          href="https://twitter.com/BR_whocode"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @BR_whocode
-        </a>{" "}
-        on Twitter. We'll validate your profile and add it to the list.
-      </p>
-      <h2 className={styles.emphasis}>Opt out</h2>
-      <p>
-        If you’ve been featured in the directory and you’d rather not be, please
-        send a DM to{" "}
-        <a
-          href="https://twitter.com/BR_whocode"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          @BR_whocode
-        </a>{" "}
-        on Twitter and you will be removed.
-      </p>
 
       <div className={styles.emphasis} />
 
