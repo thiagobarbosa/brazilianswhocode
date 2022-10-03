@@ -7,10 +7,10 @@ function SquareCheckIcon() {
       width="16"
       height="16"
       fill="none"
-      stroke="currentColor"
+      stroke="green"
       strokeLinecap="round"
       strokeLinejoin="round"
-      strokeWidth="2"
+      strokeWidth="3"
       className="feather feather-check-square"
       viewBox="0 0 24 24"
     >
