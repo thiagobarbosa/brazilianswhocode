@@ -11,18 +11,6 @@ Brazilians Who Code is happy to support new directories highlighting underrepres
 
 This project requires API keys from [Twitter](https://twitter.com) to populate the profile data.
 
-#### Seeker
-
-Seeker is optional. To run this project without Seeker:
-
-1. Clone the repo and open it in your code editor
-2. Delete the entire `api/jobs-rss.js` file
-3. Remove the rewrite from `next.config.mjs` that has `/api/jobs-rss` in it
-4. Delete the entire `pages/jobs` folder
-5. At some point, remove the link to the jobs page from the `components/nav` file
-
-If you'd like to use Seeker, sign up for an account and create a `.env` file in the outermost file in this project. Add `WWD_SEEKER_KEY=EXAMPLE_VALUE`, replacing `EXAMPLE_VALUE` with the API key you get from Seeker.
-
 #### Twitter
 
 Twitter is required.
@@ -87,4 +75,4 @@ Making sure you're in the correct project folder, start the local development se
 yarn run dev
 ```
 
-In your browser, open `localhost:8000`.
+In your browser, open `localhost:3000`.
