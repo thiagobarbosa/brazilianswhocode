@@ -52,8 +52,8 @@ export default function Home({ profiles, categories }) {
   const profileContainerRef = useRef();
 
   const filterCategoryTypes = [
-    { name: "Location", id: "location" },
     { name: "Expertise", id: "expertise" },
+    { name: "Location", id: "location" },
     { name: "Position", id: "position" }
   ];
 
