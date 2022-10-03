@@ -19,13 +19,19 @@
   }
 }
 
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
-  display: block;
   width: 150px;
   fill: var(--text);
 }
 
 .links {
+  display: flex;
+  justify-content: center;
   padding-top: 24px;
 }
 
