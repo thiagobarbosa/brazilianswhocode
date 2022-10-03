@@ -8,8 +8,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
   const title = "Brazilians Who Code";
   const description =
     "A Twitter directory of accomplished Brazilians in the tech industry.";
-    // not a beautiful solution:
-  const image = "/images/logo.png#";
+  const image = "/images/logo.png";
 
   return (
     <>
@@ -22,9 +21,11 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
         <meta property="og:url" content="https://brazilianswhocode.com" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content={title} />
+        <meta property="twitter:card" content="summary" />
         <meta property="twitter:site" content="@BR_whocode" />
-        <meta property="twitter:creator" content="@tsouza_barbosa" />
-        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:creator" content="@BR_whocode" />
         <meta property="twitter:image" content={image} />
         <link
           rel="icon"
@@ -45,7 +46,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-G6YNC8RLFH"
         strategy="afterInteractive"
       />
-     
+
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
@@ -54,7 +55,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
         
           gtag('config', 'G-G6YNC8RLFH');
         `}
-      </Script> 
+      </Script>
     </>
   );
 }
