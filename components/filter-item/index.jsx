@@ -16,25 +16,28 @@ const FilterItem = ({ isChecked, onChange, title, id, type, count }) => {
     [styles.labelPill]: type === "pill",
     [styles.labelRow]: type === "row",
   });
+  
   return (
-    <span key={id} className={pillStyles}>
-      <input
-        id={id}
-        type="checkbox"
-        value={id}
-        onChange={onChange}
-        checked={isChecked}
-        className={styles.input}
-      />
-      <label htmlFor={id} className={labelStyles}>
-        {type === "row" && (
-          <>{isChecked ? <SquareCheckIcon /> : <SquareIcon />}</>
-        )}
-        <span className={styles.labelTitle}>{title}</span>
-        {type === "row" && <span className={styles.count}>{count}</span>}
-      </label>
-    </span>
-  );
+    count > 0 ? (
+      <span key={id} className={pillStyles}>
+        <input
+          id={id}
+          type="checkbox"
+          value={id}
+          onChange={onChange}
+          checked={isChecked}
+          className={styles.input}
+        />
+        <label htmlFor={id} className={labelStyles}>
+          {type === "row" && (
+            <>{isChecked ? <SquareCheckIcon /> : <SquareIcon />}</>
+          )}
+          <span className={styles.labelTitle}>{title}</span>
+          {type === "row" && <span className={styles.count}>{count}</span>}
+        </label>
+      </span>
+    ) : null
+    )
 };
 
 export default FilterItem;
