@@ -176,7 +176,7 @@
   },
  
   {
-    "title": "Founders",
+    "title": "Founder",
     "id": "founder",
     "type": "position"
   },
@@ -188,6 +188,11 @@
   {
     "title": "Freelancer",
     "id": "freelancer",
+    "type": "position"
+  },
+  {
+    "title": "Manager",
+    "id": "manager",
     "type": "position"
   },
   {

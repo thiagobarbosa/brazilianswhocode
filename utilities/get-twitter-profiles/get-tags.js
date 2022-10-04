@@ -100,8 +100,9 @@ function getProfileExpertise({ description }) {
 function getProfilePosition({ description }) {
   return {
     founder: includes(description, ["founder", "cofounder", "co-founder", "co-fundadora", "co-fundador"]),
-    engineer: includes(description, ["engineer", "developer"]),
+    engineer: includes(description, ["engineer", "developer", "desenvolvedor", "dev"]),
     freelance: includes(description, ["freelance", "freelancer"]),
+    manager: includes(description, ["management", "leadership", "head", "manager", "lead", "head", "vp", "director"]),
     clevel: includes(description, ["CTO", "CIO"]),
   };
 }
