@@ -367,6 +367,7 @@ export default function Home({ profiles, categories }) {
                             }
                             className={styles.filterItemInput}
                             title={category.title}
+                            count ={category.count}
                           />
                         ))}
                       </div>
