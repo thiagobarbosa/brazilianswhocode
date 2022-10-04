@@ -1,3 +1,5 @@
+import countries from "../../countries.json"
+
 function includes(description, terms) {
   return terms.some((term) => {
     // The terms should not appear within a word. This means that they must
@@ -30,7 +32,7 @@ function deleteFalseFromObject(o) {
   return o;
 }
 
-function getProfileLocation({ location }) {
+function getProfileBrazilianLocation({ location }) {
   return {
     ac: includes(location, ["acre", "rio branco", "ac"]),
     al: includes(location, ["alagoas", "maceio", "maceió", "al"]),
@@ -60,6 +62,14 @@ function getProfileLocation({ location }) {
     se: includes(location, ["sergipe", "aracaju", "se"]),
     to: includes(location, ["tocantins", "palma", "to"])
   };
+}
+
+function getProfileExternalLocation({ location }) {
+  const externalLocations = {}
+  countries.map((item) => {
+    externalLocations[item.id] = includes(location, Array(item.title))
+  })
+  return externalLocations
 }
 
 function getProfileExpertise({ description }) {
@@ -100,7 +110,8 @@ function getProfilePosition({ description }) {
 
 export default function getTags(profile) {
   return {
-    location: deleteFalseFromObject(getProfileLocation(profile)),
+    brazilianLocation: deleteFalseFromObject(getProfileBrazilianLocation(profile)),
+    externalLocation: deleteFalseFromObject(getProfileExternalLocation(profile)),
     expertise: deleteFalseFromObject(getProfileExpertise(profile)),
     position: deleteFalseFromObject(getProfilePosition(profile)),
   };

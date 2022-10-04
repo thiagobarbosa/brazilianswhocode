@@ -2,132 +2,132 @@
   {
     "title": "Acre",
     "id": "ac",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Alagoas",
     "id": "al",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Amapá",
     "id": "ap",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Amazonas",
     "id": "am",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Bahia",
     "id": "ba",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Ceará",
     "id": "ce",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Distrito Federal",
     "id": "df",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Espírito Santo",
     "id": "es",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Goiás",
     "id": "go",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Maranhão",
     "id": "ma",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Mato Grosso",
     "id": "mt",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Mato Grosso do Sul",
     "id": "ms",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Minas Gerais",
     "id": "mg",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Pará",
     "id": "pa",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Paraíba",
     "id": "pb",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Paraná",
     "id": "pr",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Piauí",
     "id": "pi",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Rio de Janeiro",
     "id": "rj",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Rio Grande do Norte",
     "id": "rn",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Rio Grande do Sul",
     "id": "rs",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Rondônia",
     "id": "ro",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Roraima",
     "id": "rr",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Santa Catarina",
     "id": "sc",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "São Paulo",
     "id": "sp",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Sergipe",
     "id": "se",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Tocantins",
     "id": "to",
-    "type": "location"
+    "type": "brazilianLocation"
   },
   {
     "title": "Community Manager",

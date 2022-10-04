@@ -10,6 +10,7 @@ import Nav from "../components/nav";
 import Loader from "../components/loader";
 import FilterItem from "../components/filter-item";
 import categoriesJson from "../categories.json";
+import countries from "../countries.json"
 import paginate from "../utilities/paginate";
 import CloseIcon from "../icons/close";
 import FilterIcon from "../icons/filter";
@@ -20,12 +21,23 @@ const TWITTER_ACCOUNT_ID = "1576146354669330433";
 
 export async function getStaticProps() {
   const profiles = await getTwitterProfiles(TWITTER_ACCOUNT_ID);
+
+  //building categories to be used in filters
   const categories = categoriesJson.map((category) => ({
     ...category,
     count: profiles.filter((profile) => {
       return profile.tags[category.type][category.id];
     }).length,
   }));
+
+  //adding non-Brazilian places to categories
+  countries.map((country) => (
+    categories.push({id: country.id, type: "externalLocation", title: country.title, 
+    count: profiles.filter((profile) => {
+      return profile.tags["externalLocation"][country.id];
+    }).length,
+  })
+  ));
 
   return {
     revalidate: 3600,
@@ -52,8 +64,9 @@ export default function Home({ profiles, categories }) {
   const profileContainerRef = useRef();
 
   const filterCategoryTypes = [
-    { name: "Expertise", id: "expertise" },
-    { name: "Location", id: "location" },
+    { name: "Expertise", id: "expertise"},
+    { name: "Location (Brazil)", id: "brazilianLocation"},
+    { name: "Location (Outside Brazil)", id: "externalLocation"},
     { name: "Position", id: "position" }
   ];
 
