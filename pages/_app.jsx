@@ -8,7 +8,7 @@ export default function BraziliansWhoCode({ Component, pageProps }) {
   const title = "Brazilians Who Code";
   const description =
     "A Twitter directory of accomplished Brazilians in the tech industry.";
-  const image = "/images/logo.png";
+  const image = "https://pbs.twimg.com/profile_images/1576311847006994434/8cey6S8A_400x400.jpg";
 
   return (
     <>
