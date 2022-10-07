@@ -2,6 +2,7 @@ import { chunk, flatten } from "lodash-es";
 import fs from "fs";
 import addDescriptionLinks from "./add-description-links";
 import getTags from "./get-tags";
+import getNonPersonalProfiles from "./non-personal-profiles";
 
 const lessThanOneHourAgo = (date) => {
   const HOUR = 1000 * 60 * 60;
@@ -44,9 +45,13 @@ export default async function getTwitterProfiles(twitterAccountId) {
     }
 
     const followingList = await followingListResponse.json();
+    // avoid calling the API for non-personal profiles
+    const filteredFollowingList = followingList.ids.filter((id) => {
+      return !getNonPersonalProfiles().includes(id)
+    })
 
     chunkedDevelopers = await Promise.all(
-      chunk(followingList.ids, 100).map(async (chunk) => {
+      chunk(filteredFollowingList, 100).map(async (chunk) => {
         const users = chunk.join(",");
 
         const resultsResponse = await fetch(

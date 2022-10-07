@@ -47,6 +47,9 @@ To provide your own user list, replace the value of the variable `TWITTER_ACCOUN
 
 Make sure that the account provided is following at least one account and that Twitter ID in `pages/index.jsx` is in quotes.
 
+### Managing non-personal Twitter accounts
+If you want to be able to follow non-personal profiles on your Twitter account (like NGOs, tech communities, etc), and yet not to display them on the website, you can include the Twitter ids of those profiles in the file `utilities/non-personal-profiles.js`. They will then be skipped from the API calls to Twitter and won't be shown on any page.
+
 ### Install dependencies
 
 If you're new to development, start by installing [Homebrew](https://brew.sh/), a macOS package manager. Paste the following command in your terminal.
