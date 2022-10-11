@@ -34,6 +34,7 @@ const FilterItem = ({ isChecked, onChange, title, id, type, count }) => {
           )}
           <span className={styles.labelTitle}>{title}</span>
           {type === "row" && <span className={styles.count}>{count}</span>}
+          {type === "pill" && <span className={styles.count}> ({count})</span>}
         </label>
       </span>
     ) : null
