@@ -30,6 +30,9 @@ const Nav = (props) => {
         <Link href="https://twitter.com/BR_whocode" >
           <a className={styles.link} target="_blank">Twitter</a>
         </Link>
+        <Link href="https://www.linkedin.com/company/brazilianswhocode/" >
+          <a className={styles.link} target="_blank">Linkedin</a>
+        </Link>
       </nav>
     </div>
   );
