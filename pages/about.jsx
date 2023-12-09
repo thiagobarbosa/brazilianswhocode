@@ -92,7 +92,7 @@ const App = () => (
       <h2 className={styles.emphasis}>Source code</h2>
       <p>
         Brazilians Who Code is happy to support new directories highlighting
-        underrepresented or marginalized groups. If you’re looking to start a
+        underrepresented or marginalized groups. If you're looking to start a
         similar effort, feel free to fork the project on{" "}
         <a href="https://github.com/thiagobarbosa/brazilianswhocode" target="_blank">GitHub</a>.
       </p>
@@ -111,7 +111,7 @@ const App = () => (
       </p>
       <h1 className={styles.h1}>Removing yourself from the list</h1>
       <p>
-        If you’ve been featured in the website and you’d rather not be, please
+        If you've been featured in the website and you'd rather not be, please
         send a DM to{" "}
         <a
           href="https://twitter.com/BR_whocode"
@@ -126,7 +126,7 @@ const App = () => (
       <h1 className={styles.h1}>Similar directories</h1>
       <p>
         Examining diversity along the axis of gender is one small piece of the
-        puzzle. If you’ve found this site to be valuable, please take a look at
+        puzzle. If you've found this site to be valuable, please take a look at
         the work of friends in the industry building similar efforts.
       </p>
       <div className={styles.friendContainer}>

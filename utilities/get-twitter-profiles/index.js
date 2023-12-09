@@ -32,7 +32,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
     };
 
     const followingListResponse = await fetch(
-      `https://api.twitter.com/1.1/friends/ids.json?user_id=${twitterAccountId}&stringify_ids=true`,
+      `https://api.twitter.com/2/users/${twitterAccountId}/following/`,
       {
         headers: twitterAPIHeaders,
       }
@@ -55,7 +55,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
         const users = chunk.join(",");
 
         const resultsResponse = await fetch(
-          `https://api.twitter.com/1.1/users/lookup.json?user_id=${users}`,
+          `https://api.twitter.com/2/users/lookup.json?user_id=${users}`,
           {
             headers: twitterAPIHeaders,
           }
