@@ -32,7 +32,7 @@ export default async function getTwitterProfiles(twitterAccountId) {
     };
 
     const followingListResponse = await fetch(
-      `https://api.twitter.com/2/users/${twitterAccountId}/following/`,
+      `https://api.twitter.com/2/users/${twitterAccountId}/following`,
       {
         headers: twitterAPIHeaders,
       }
