@@ -1,7 +1,10 @@
 {
-  "name": "women-who-design",
-  "description": "A Twitter directory of accomplished women in the design industry.",
+  "name": "brazilians-who-code",
+  "description": "A Twitter directory of accomplished Brazilians developers.",
   "license": "MIT",
+  "engines": {
+    "node": "^20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

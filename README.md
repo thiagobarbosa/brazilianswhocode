@@ -1,6 +1,6 @@
 # Brazilians Who Code
 
-Brazilians Who Code is a [Next.js](https://nextjs.org)-powered Twitter directory of accomplished Brazilians in the design industry. It aims to help people find notable and relevant voices to follow on Twitter by parsing Twitter bios for popular keywords.
+Brazilians Who Code is a [Next.js](https://nextjs.org)-powered Twitter directory of accomplished Brazilians developers. It aims to help people find notable and relevant voices to follow on Twitter by parsing Twitter bios for popular keywords.
 This entire website is built based on the source code of [Women Who Design](https://github.com/julesforrest/womenwhodesign), and we highly appreciate they opening their code :).
 
 ## Forking this project
